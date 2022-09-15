@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./DockerFile.aws
+      args:
+        - REACT_APP_CLOUDFRONT_DISTRIBUTION_URL=$REACT_APP_CLOUDFRONT_DISTRIBUTION_URL
+        - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+        - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+        - AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
+    container_name: nginx
+    ports:
+      - "80:80"

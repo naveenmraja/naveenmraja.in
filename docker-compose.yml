@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./DockerFile
+      args:
+        - REACT_APP_CLOUDFRONT_DISTRIBUTION_URL=$REACT_APP_CLOUDFRONT_DISTRIBUTION_URL
+    image: naveenmraja/naveenmraja-nginx:1.1
+    container_name: nginx
+    ports:
+      - "80:80"
