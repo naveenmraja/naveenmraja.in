@@ -24,7 +24,7 @@
 
 **Technologies Used:**
 
-- React+Redux
+- React.js
 - Nginx
 - Docker
 - Kubernetes
