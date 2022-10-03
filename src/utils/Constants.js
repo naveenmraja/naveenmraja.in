@@ -67,7 +67,7 @@ export const LANGUAGES_ICON_MAP = {
     Python: [<SiPython size={30} color={"#f1d24f"}/>, 5],
     Java: [<SiJava size={30}/>, 5],
     Javascript: [<SiJavascript size={30} color={"#f2cd36"}/>, 5],
-    SQL: [<DiDatabase size={30} color={"#f2aa05"}/>, 5],
+    SQL: [<DiDatabase size={30} color={"#dc372c"}/>, 5],
     "C/C++": [<SiCplusplus size={30} color={"#007ac2"}/>, 4],
     Solidity: [<SiSolidity size={30}/>, 3]
 }
@@ -86,7 +86,7 @@ export const TECHNOLOGIES_ICON_AND_RATING_MAP = {
     "Redis": [<SiRedis size={30} color={"#dc372c"}/>, 5],
     "MySQL": [<SiMysql size={30}/>, 5],
     "DynamoDB": [<SiAmazondynamodb size={30} color={"#f48b34"}/>, 4],
-    "MongoDB": [<SiMongodb size={30} color={"#138b4c"}/>, 3]
+    "MongoDB": [<SiMongodb size={30} color={"#138b4c"}/>, 4]
 }
 
 const NODEJS_TOOLTIP_ICON = <Tooltip title="Node.js" key={"nodejs-tooltip"} arrow>
@@ -131,19 +131,19 @@ export const PROJECTS_LIST = [
             MONGODB_TOOLTIP_ICON, REDIS_TOOLTIP_ICON, NGINX_TOOLTIP_ICON, DOCKER_TOOLTIP_ICON, KUBERNETES_TOOLTIP_ICON]
     },
     {
-        title: "mysecrets.tech",
-        name: "mysecrets",
-        subheader: "A Simple diary application",
-        description: "MySecrets is a simple diary application that lets you record your memories. " +
+        title: "caltrack.tech",
+        name: "caltrack",
+        subheader: "Calorie Tracking application",
+        description: "CalTrack is a calorie tracking app that lets you keep track of your daily food consumption. " +
             "You can create an entry against any date, edit and delete it at any point in time. " +
-            "MySecrets provides a dashboard to view and navigate through all the entries created.",
-        logoPath: `${CLOUDFRONT_DISTRIBUTION_URL}/mysecrets-logo.webp`,
-        imagePath: `${CLOUDFRONT_DISTRIBUTION_URL}/mysecrets-screenshot.webp`,
-        projectURL: "https://mysecrets.tech",
-        projectRepoURL: "https://github.com/naveenmraja/mysecrets.tech",
+            "Caltrack's dashboard provides useful insights about user's consumption. ",
+        logoPath: `${CLOUDFRONT_DISTRIBUTION_URL}/caltrack-logo.webp`,
+        imagePath: `${CLOUDFRONT_DISTRIBUTION_URL}/caltrack-screenshot.webp`,
+        projectURL: "https://caltrack.tech",
+        projectRepoURL: "https://github.com/naveenmraja/caltrack.tech",
         isHosted: true,
-        techStack: [NODEJS_TOOLTIP_ICON, REACT_TOOLTIP_ICON, REDUX_TOOLTIP_ICON, DYNAMODB_TOOLTIP_ICON,
-            NGINX_TOOLTIP_ICON, DOCKER_TOOLTIP_ICON, KUBERNETES_TOOLTIP_ICON]
+        techStack: [NODEJS_TOOLTIP_ICON, REACT_TOOLTIP_ICON, MONGODB_TOOLTIP_ICON, NGINX_TOOLTIP_ICON,
+            DOCKER_TOOLTIP_ICON, KUBERNETES_TOOLTIP_ICON]
     },
     {
         title: "naveenmraja.in",
@@ -158,6 +158,21 @@ export const PROJECTS_LIST = [
         projectRepoURL: "https://github.com/naveenmraja/naveenmraja.in",
         isHosted: true,
         techStack: [REACT_TOOLTIP_ICON, NGINX_TOOLTIP_ICON, DOCKER_TOOLTIP_ICON, KUBERNETES_TOOLTIP_ICON]
+    },
+    {
+        title: "mysecrets.tech",
+        name: "mysecrets",
+        subheader: "A simple diary application",
+        description: "MySecrets is a simple diary application that lets you record your memories. " +
+            "You can create an entry against any date, edit and delete it at any point in time. " +
+            "MySecrets provides a dashboard to view and navigate through all the entries created.",
+        logoPath: `${CLOUDFRONT_DISTRIBUTION_URL}/mysecrets-logo.webp`,
+        imagePath: `${CLOUDFRONT_DISTRIBUTION_URL}/mysecrets-screenshot.webp`,
+        projectURL: "https://mysecrets.tech",
+        projectRepoURL: "https://github.com/naveenmraja/mysecrets.tech",
+        isHosted: true,
+        techStack: [NODEJS_TOOLTIP_ICON, REACT_TOOLTIP_ICON, REDUX_TOOLTIP_ICON, DYNAMODB_TOOLTIP_ICON,
+            NGINX_TOOLTIP_ICON, DOCKER_TOOLTIP_ICON, KUBERNETES_TOOLTIP_ICON]
     },
     {
         title: "ExpressCheckout Demo",
@@ -175,7 +190,7 @@ export const PROJECTS_LIST = [
     {
         title: "Assets Dashboard",
         name: "assetdashboard",
-        subheader: "Dashboard for assets",
+        subheader: "Dashboard for user holdings",
         description: "A dashboard page to display the assets owned by the user with a piechart. " +
             "Users can filter the assets based on the asset type using the filter menu or by clicking on the piechart segment.",
         logoPath: `${CLOUDFRONT_DISTRIBUTION_URL}/assetsd-logo.webp`,

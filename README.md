@@ -109,6 +109,6 @@
 
 - Run the following command to build the project and push the build artefacts to S3 bucket
 
-      docker-compose -f docker-compose-aws build
+      docker-compose -f docker-compose-aws.yml build
 
 - You should be able to visit the website using your cloudfront distribution url. If you had used custom domain name, you can create a A record in Route 53 to point your domain to your cloudfront distribution. 
