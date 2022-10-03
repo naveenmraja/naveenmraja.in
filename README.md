@@ -5,7 +5,7 @@
 - [Description](#description)
 - [Website Screenshots](#screenshots)
 - [Technologies Used](#technologies)
-- [Running in development environmet](#development)
+- [Running in development environment](#development)
 - [Production deployment with Kubernetes](#production_kubernetes)
 - [Production deployment with AWS](#production_aws)
 
